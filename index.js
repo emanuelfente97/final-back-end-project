@@ -8,7 +8,7 @@ const authRoute = require("./routes/auth");
 const ContactRoute = require("./routes/contact");
 
 mongoose
-  .connect(process.env.DATA_URL, { useNewUrlParser: true })
+  .connect(process.env.DATA_URL)
   .then(() => console.log("DB Connection succesful"))
   .catch((err) => {
     console.log(err);
