@@ -20,7 +20,7 @@ app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/contacts", ContactRoute);
 
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
