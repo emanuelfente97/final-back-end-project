@@ -1,4 +1,11 @@
-// require("dotenv").config();
+require("dotenv").config();
+const cors = require(cors)
+const corsOptions ={
+  origin: '*',
+  credentials: true,
+  optionSucessStatuuus:200,
+  
+}
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -14,6 +21,7 @@ mongoose
     console.log(err);
   });
 
+app.use(cors(corsOptions))
 app.use(express.json());
 app.use("/api/products", productRoute);
 app.use("/api/users", userRoute);
