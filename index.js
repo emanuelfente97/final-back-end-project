@@ -1,5 +1,5 @@
 require("dotenv").config();
-const cors = require(cors)
+const cors = require("cors")
 const corsOptions ={
   origin: '*',
   credentials: true,
