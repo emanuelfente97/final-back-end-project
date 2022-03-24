@@ -29,7 +29,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/contacts", ContactRoute);
 
 app.get("/", function (req, res) {
-  res.send("Hello World");
+  res.send("Welcome to Emanuel's Backend ");
 });
 
 app.listen(process.env.PORT || 5000, () => {
