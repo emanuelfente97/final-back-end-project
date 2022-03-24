@@ -3,7 +3,7 @@ const cors = require("cors")
 const corsOptions ={
   origin: '*',
   credentials: true,
-  optionSucessStatuuus:200,
+  optionSuccessStatus:200,
   
 }
 const express = require("express");
